@@ -9,20 +9,7 @@ on:
 jobs:
   build:
   
-    services:
-          # Label used to access the service container
-          postgres:
-            # Docker Hub image
-            image: postgres
-            # Provide the password for postgres
-            env:
-              POSTGRES_PASSWORD: postgres
-            # Set health checks to wait until postgres has started
-            options: >-
-              --health-cmd pg_isready
-              --health-interval 10s
-              --health-timeout 5s
-              --health-retries 5
+    
 
     runs-on: ubuntu-latest
     strategy:
@@ -31,7 +18,20 @@ jobs:
         python-version: [3.12]
     env:
       POSTGRES_HOST: ${{ vars.PG_HOST }}
-
+    services:
+        # Label used to access the service container
+      postgres:
+        # Docker Hub image
+        image: postgres
+        # Provide the password for postgres
+        env:
+          POSTGRES_PASSWORD: postgres
+        # Set health checks to wait until postgres has started
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python ${{ matrix.python-version }}
