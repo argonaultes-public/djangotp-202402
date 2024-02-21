@@ -46,6 +46,7 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install Dependencies
       run: |
+        apt -y update
         apt -y install curl postgresql-client libpq-dev
         curl -sS https://bootstrap.pypa.io/get-pip.py | python
         pip3.12 install -r requirements.txt
