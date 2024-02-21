@@ -51,6 +51,7 @@ default:
     paths:
       - ~/.cache/pip/
   before_script:
+    - apt -y update
     - add-apt-repository -y ppa:deadsnakes/ppa
     - apt -y update
     - apt -y install apt-utils
