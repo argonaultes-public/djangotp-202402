@@ -56,8 +56,7 @@ default:
     - add-apt-repository -y ppa:deadsnakes/ppa
     - apt -y update
     - apt -y install apt-utils
-    - apt -y install net-tools python3.12
-    - apt -y upgrade
+    - apt -y install python3.12
     - curl -sS https://bootstrap.pypa.io/get-pip.py | python3.12
     - pip3.12 install -r requirements.txt
 
