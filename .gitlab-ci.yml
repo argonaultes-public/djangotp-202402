@@ -55,8 +55,8 @@ default:
     - apt -y install software-properties-common
     - add-apt-repository -y ppa:deadsnakes/ppa
     - apt -y update
-    - apt -y install apt-utils
-    - apt -y install python3.12
+    - DEBIAN_FRONTEND=noninteractive apt -y install apt-utils
+    - DEBIAN_FRONTEND=noninteractive apt -y install python3.12 net-tools
     - curl -sS https://bootstrap.pypa.io/get-pip.py | python3.12
     - pip3.12 install -r requirements.txt
 
