@@ -1,6 +1,8 @@
 asgiref==3.7.2
+beautifulsoup4==4.12.3
 coverage==7.4.2
 Django==5.0.1
 parameterized==0.9.0
 psycopg2-binary==2.9.9
+soupsieve==2.5
 sqlparse==0.4.4

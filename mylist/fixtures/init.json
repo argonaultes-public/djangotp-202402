@@ -12,5 +12,14 @@
         "fields": {
             "name": "birthday ldlc"
         }
+    },
+    {
+        "model": "mylist.shoplistitem",
+        "pk": 1,
+        "fields": {
+            "name": "coffee machine",
+            "quantity": 2,
+            "shop_list": 1
+        }
     }
 ]
