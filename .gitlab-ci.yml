@@ -35,6 +35,7 @@ variables:
   POSTGRES_USER: $PG_USER
   POSTGRES_PASSWORD: $PG_PASS
   POSTGRES_HOST: $PG_HOST
+  POSTGRES_PORT: 5432
 
 default:
   image: ubuntu:22.04
