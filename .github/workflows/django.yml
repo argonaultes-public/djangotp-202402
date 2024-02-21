@@ -30,7 +30,7 @@ jobs:
       matrix:
         python-version: [3.12]
     env:
-      POSTGRES_HOST: $PG_HOST
+      POSTGRES_HOST: ${{ vars.PG_HOST }}
 
     steps:
     - uses: actions/checkout@v3
