@@ -52,7 +52,7 @@ default:
       - ~/.cache/pip/
   before_script:
     - apt -y update
-    - apt -y install software-properties-common
+    - apt -y install software-properties-common build-essential
     - add-apt-repository -y ppa:deadsnakes/ppa
     - apt -y update
     - DEBIAN_FRONTEND=noninteractive apt -y install apt-utils
