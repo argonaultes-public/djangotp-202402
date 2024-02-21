@@ -57,7 +57,7 @@ default:
     - apt -y update
     - DEBIAN_FRONTEND=noninteractive apt -y install apt-utils
     - DEBIAN_FRONTEND=noninteractive apt -y install python3.12 net-tools
-    - apt -y install curl postgresql-client postgresql-devel
+    - apt -y install curl postgresql-client libpq-dev
     - curl -sS https://bootstrap.pypa.io/get-pip.py | python3.12
     - pip3.12 install -r requirements.txt
 
