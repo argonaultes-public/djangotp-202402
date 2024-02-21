@@ -12,6 +12,7 @@ jobs:
     
 
     runs-on: ubuntu-latest
+    container: ubuntu:22.04
     strategy:
       max-parallel: 4
       matrix:
