@@ -1,0 +1,16 @@
+[
+    {
+        "model": "mylist.shoplist",
+        "pk": 1,
+        "fields": {
+            "name": "christmas"
+        }
+    },
+    {
+        "model": "mylist.shoplist",
+        "pk": 2,
+        "fields": {
+            "name": "birthday ldlc"
+        }
+    }
+]

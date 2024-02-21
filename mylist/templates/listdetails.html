@@ -1,0 +1,10 @@
+{% if shoplist %}
+<h1>{{ shoplist }}</h1>
+<ul>
+    {% for shoplistitem in shoplistitems %}
+        <li>{{ shoplistitem }}</li>
+    {% endfor %}
+</ul>
+{% else %}
+<div>No corresponding shopping list</div> 
+{% endif %}

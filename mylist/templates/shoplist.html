@@ -1,0 +1,13 @@
+<ul>
+    {% for shoplist in shoplists %}
+        <li>
+            <div>
+                <a href="/shoplist/v2/{{shoplist.id}}">{{ shoplist }}</a>
+            </div>
+            <div>
+                {% url 'shopping_list_details_v2' shoplist.id  %}
+            </div>
+        </li>
+
+    {% endfor %}
+</ul>
