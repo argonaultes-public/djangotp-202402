@@ -29,7 +29,7 @@ def shopping_list_details_v2(request, listid):
         return HttpResponseServerError('listid not found')
 
 def shopping_list_details(request, listid):
-    shopping_list = ShopList.objects.filter(id = listid)
+    shopping_list = ShopList.objects.filter(id = listid) # QuerySet
 
     context = {
         'shoplist': None,
